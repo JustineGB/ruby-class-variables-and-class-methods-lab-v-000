@@ -23,6 +23,12 @@ end
 
 def self.genres
   @@genres.uniq
+<<<<<<< HEAD
+end
+
+def self.artists
+  @@artists.uniq
+=======
 end
 
 def self.artists
@@ -39,9 +45,26 @@ def self.artist_count
     end
   end
   return artists_count
+>>>>>>> b53e1073b0c36204c68142a8002c8f6f3b5542d3
+end
+  
+
+<<<<<<< HEAD
+def self.artist_count
+  artists_count = {}
+  @@artists.each do |artist|
+    if artists_count[artist]
+      artists_count[artist] += 1
+    else
+      artists_count[artist] = 1
+    end
+  end
+  return artists_count
 end
 
 
+=======
+>>>>>>> b53e1073b0c36204c68142a8002c8f6f3b5542d3
 def self.genre_count
   genres_count = {}
   @@genres.each do |genre|
